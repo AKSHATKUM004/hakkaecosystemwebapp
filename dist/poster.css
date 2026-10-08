@@ -1,0 +1,547 @@
+:root {
+    --red: #f42619;
+    --cream: #f6e3c8;
+    --ink: #191512;
+    --orange: #f7a900;
+    --poster: "Bowlby One SC", Impact, sans-serif;
+    --condensed: "Bebas Neue", Impact, sans-serif
+}
+
+.site-header {
+    color: var(--red)
+}
+
+.site-header nav a,
+.bag {
+    color: var(--ink)
+}
+
+.bag {
+    border-color: var(--ink);
+    background: rgba(246, 227, 200, .72)
+}
+
+.bag span {
+    background: var(--red);
+    color: var(--cream)
+}
+
+.hero {
+    display: block;
+    min-height: 100svh;
+    padding: 10.2rem 3.1vw 3.5rem;
+    background: var(--cream);
+    color: var(--red);
+    isolation: isolate
+}
+
+.hero-canvas {
+    opacity: .22;
+    mix-blend-mode: multiply
+}
+
+.hero-copy {
+    position: relative;
+    z-index: 2;
+    padding: 0;
+    max-width: none
+}
+
+.hero .eyebrow {
+    display: inline-block;
+    padding: .42rem .7rem;
+    margin: 0 0 .6rem;
+    border: 2px solid var(--ink);
+    background: var(--orange);
+    color: var(--ink);
+    font-weight: 500;
+    transform: rotate(-5deg)
+}
+
+.hero h1 {
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+    font-family: var(--poster);
+    font-size: clamp(5rem, 14.4vw, 15rem);
+    line-height: .77;
+    letter-spacing: -.08em;
+    color: var(--red);
+    -webkit-text-stroke: clamp(2px, .22vw, 4px) var(--cream);
+    text-shadow: clamp(3px, .4vw, 7px) clamp(3px, .4vw, 7px) var(--cream);
+    text-transform: uppercase
+}
+
+.hero h1 span {
+    display: inline-block
+}
+
+.hero h1 span:first-child {
+    font-size: .55em;
+    vertical-align: top;
+    margin-right: .03em;
+    transform: rotate(-3deg)
+}
+
+.hero h1 span:nth-child(2) {
+    display: block
+}
+
+.hero h1 em {
+    display: inline-block;
+    font-style: normal;
+    color: var(--orange);
+    transform: rotate(2deg);
+    -webkit-text-stroke: clamp(2px, .22vw, 4px) var(--cream);
+    text-shadow: clamp(3px, .4vw, 7px) clamp(3px, .4vw, 7px) var(--cream)
+}
+
+.hero .intro {
+    position: absolute;
+    z-index: 4;
+    bottom: 3.8rem;
+    left: 3.1vw;
+    max-width: 250px;
+    color: var(--ink);
+    font-family: var(--condensed);
+    font-size: clamp(1.1rem, 1.7vw, 1.8rem);
+    line-height: 1.04
+}
+
+.hero .round-link {
+    position: absolute;
+    z-index: 4;
+    right: 3.1vw;
+    bottom: 3.8rem;
+    padding: 1rem 1.2rem;
+    border: 2px solid var(--ink);
+    border-radius: 99px;
+    background: var(--red);
+    color: var(--cream);
+    box-shadow: 4px 4px 0 var(--ink);
+    font-size: .72rem
+}
+
+.coffee-cutout {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: 5.5%;
+    width: min(47vw, 660px);
+    max-height: 77svh;
+    object-fit: contain;
+    transform: translateX(-50%);
+    filter: drop-shadow(9px 12px 0 rgba(28, 17, 13, .16))
+}
+
+.hero-stamp {
+    right: 8%;
+    bottom: 25%;
+    width: 128px;
+    height: 128px;
+    background: var(--orange);
+    color: var(--ink);
+    border: 4px solid var(--cream);
+    font-size: .8rem;
+    box-shadow: 5px 5px 0 var(--ink)
+}
+
+.hero-stamp span {
+    width: 90px
+}
+
+.hero-doodle {
+    position: absolute;
+    z-index: 2;
+    color: var(--ink);
+    font-family: var(--poster);
+    font-size: clamp(4rem, 8vw, 8rem);
+    line-height: 1;
+    -webkit-text-stroke: 3px var(--cream);
+    text-shadow: 4px 4px 0 var(--cream)
+}
+
+.doodle-left {
+    left: 8%;
+    top: 43%;
+    transform: rotate(-12deg)
+}
+
+.doodle-right {
+    right: 7%;
+    top: 18%;
+    color: var(--orange);
+    transform: rotate(15deg)
+}
+
+.poster-note {
+    position: absolute;
+    z-index: 4;
+    margin: 0;
+    color: var(--ink);
+    font-family: var(--condensed);
+    font-size: clamp(1rem, 1.7vw, 1.65rem);
+    line-height: 1;
+    text-align: center
+}
+
+.note-left {
+    left: 5%;
+    bottom: 17%
+}
+
+.note-right {
+    right: 3.5%;
+    bottom: 17%
+}
+
+.marquee {
+    background: var(--red);
+    border: 0;
+    color: var(--cream)
+}
+
+.marquee i {
+    color: var(--orange)
+}
+
+.story {
+    background: var(--cream);
+    padding-top: 10rem
+}
+
+.story h2,
+.menu-heading h2,
+.visit h2 {
+    font-family: var(--poster);
+    font-size: clamp(3.6rem, 8vw, 8rem);
+    line-height: .8;
+    letter-spacing: -.075em
+}
+
+.story h2 em,
+.menu-heading h2 em,
+.visit h2 em {
+    color: var(--ink)
+}
+
+.ingredient-row {
+    border-color: var(--ink)
+}
+
+.ingredient-row article+article {
+    border-color: var(--ink)
+}
+
+.menu-section {
+    background: var(--red);
+    color: var(--cream)
+}
+
+.menu-section:before {
+    color: rgba(255, 237, 210, .13);
+    font-family: var(--poster)
+}
+
+.menu-heading h2 {
+    color: var(--cream)
+}
+
+.menu-heading h2 em {
+    color: var(--orange)
+}
+
+.menu-card {
+    border: 3px solid var(--ink);
+    box-shadow: 7px 7px 0 var(--ink)
+}
+
+.card-art {
+    background: var(--orange) !important;
+    color: var(--cream) !important
+}
+
+.pour-section {
+    background: var(--cream);
+    color: var(--ink)
+}
+
+.pour-visual {
+    background: var(--orange)
+}
+
+.pour-copy h2 {
+    color: var(--red);
+    font-family: var(--poster);
+    letter-spacing: -.075em
+}
+
+.pour-copy h2 em {
+    color: var(--ink)
+}
+
+.pour-copy>p:not(.eyebrow) {
+    color: var(--ink)
+}
+
+.inverse {
+    color: var(--ink)
+}
+
+.visit {
+    background: var(--red)
+}
+
+.visit h2 {
+    font-family: var(--poster);
+    letter-spacing: -.075em
+}
+
+.visit-card {
+    border: 3px solid var(--ink);
+    box-shadow: 10px 10px 0 var(--ink)
+}
+
+footer {
+    background: var(--ink)
+}
+
+@media(max-width:760px) {
+    .hero {
+        min-height: 800px;
+        padding: 8rem 5% 2rem
+    }
+
+    .hero h1 {
+        font-size: clamp(4.5rem, 20vw, 8rem);
+        line-height: .8
+    }
+
+    .coffee-cutout {
+        width: min(105vw, 560px);
+        max-height: none;
+        bottom: 15%
+    }
+
+    .hero .intro {
+        bottom: 2.1rem;
+        left: 5%;
+        max-width: 170px;
+        font-size: 1.1rem
+    }
+
+    .hero .round-link {
+        right: 5%;
+        bottom: 2.3rem;
+        padding: .75rem .85rem;
+        font-size: .58rem
+    }
+
+    .hero-stamp {
+        right: 6%;
+        bottom: 40%;
+        width: 84px;
+        height: 84px;
+        font-size: .5rem;
+        border-width: 2px
+    }
+
+    .hero-stamp span {
+        width: 58px
+    }
+
+    .hero-doodle {
+        font-size: 3rem
+    }
+
+    .doodle-left {
+        left: 4%;
+        top: 35%
+    }
+
+    .doodle-right {
+        right: 4%;
+        top: 22%
+    }
+
+    .poster-note {
+        display: none
+    }
+
+    .story {
+        padding-top: 6rem
+    }
+
+    .story h2,
+    .menu-heading h2,
+    .visit h2 {
+        font-size: clamp(3.4rem, 16vw, 6rem)
+    }
+}
+
+.menu-cutout {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(4px 7px 0 rgba(25, 21, 18, .2));
+    transition: transform .35s ease
+}
+
+.menu-card:hover .menu-cutout {
+    transform: rotate(-3deg) scale(1.09)
+}
+
+.thali-card {
+    transform: scale(1.3)
+}
+
+.chole-card {
+    transform: scale(1.18)
+}
+
+.chowmein-card {
+    transform: scale(1.14)
+}
+
+.pour-visual {
+    isolation: isolate
+}
+
+.chole-cutout {
+    position: absolute;
+    z-index: 1;
+    width: min(88%, 560px);
+    max-height: 72%;
+    object-fit: contain;
+    filter: drop-shadow(7px 10px 0 rgba(25, 21, 18, .17))
+}
+
+.pour-word {
+    position: relative;
+    z-index: 2;
+    color: var(--cream);
+    text-shadow: 5px 5px 0 var(--red)
+}
+
+@media(max-width:760px) {
+    .hero {
+        min-height: 810px;
+        padding: 7.5rem 5% 1.7rem
+    }
+
+    .hero-copy {
+        position: static
+    }
+
+    .hero h1 {
+        max-width: 96%;
+        font-size: clamp(4.05rem, 18.2vw, 7rem);
+        line-height: .82
+    }
+
+    .hero .eyebrow {
+        font-size: .53rem
+    }
+
+    .coffee-cutout {
+        width: min(76vw, 410px);
+        max-height: 43vh;
+        bottom: 15%;
+        object-fit: contain
+    }
+
+    .hero .intro {
+        z-index: 5;
+        bottom: 2.1rem;
+        left: 5%;
+        max-width: 165px;
+        font-size: 1.08rem;
+        text-shadow: 2px 2px 0 var(--cream)
+    }
+
+    .hero .round-link {
+        z-index: 5;
+        right: 5%;
+        bottom: 2.3rem;
+        padding: .75rem .85rem;
+        font-size: .58rem
+    }
+
+    .hero-stamp {
+        right: 5%;
+        bottom: 41%;
+        width: 78px;
+        height: 78px;
+        font-size: .47rem;
+        border-width: 2px
+    }
+
+    .hero-stamp span {
+        width: 55px
+    }
+
+    .hero-doodle {
+        font-size: 2.65rem
+    }
+
+    .doodle-left {
+        left: 4%;
+        top: 34%
+    }
+
+    .doodle-right {
+        right: 4%;
+        top: 19%
+    }
+
+    .poster-note {
+        display: none
+    }
+
+    .story {
+        padding-top: 6rem
+    }
+
+    .story h2,
+    .menu-heading h2,
+    .visit h2 {
+        font-size: clamp(3.4rem, 16vw, 6rem)
+    }
+
+    .card-art {
+        height: 215px
+    }
+
+    .menu-cutout {
+        max-height: 220px
+    }
+
+    .pour-visual {
+        min-height: 440px
+    }
+
+    .chole-cutout {
+        width: 82%;
+        max-height: 63%;
+        top: 15%;
+        bottom: auto
+    }
+
+    .pour-word {
+        align-self: end;
+        margin-bottom: 63px;
+        font-size: 4rem
+    }
+
+    .pour-visual>span {
+        z-index: 3
+    }
+
+    .pour-copy {
+        padding-top: 58px
+    }
+
+    .visit-card {
+        transform: none
+    }
+}

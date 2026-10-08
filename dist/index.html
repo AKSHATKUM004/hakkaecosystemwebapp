@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HAKKA Restaurant — comforting North Indian and street food in Dehradun." />
+  <title>HAKKA Restaurant — Dehradun</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bowlby+One+SC&family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="poster.css" />
+</head>
+
+<body class="preload">
+  <div class="grain" aria-hidden="true"></div>
+  <div class="loader" aria-hidden="true"><span>PLATING SOMETHING GOOD</span><b>00</b></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="HAKKA Restaurant home">HAKKA<span>®</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="#menu">Menu</a>
+      <a href="#ritual">Our food</a>
+      <a href="#visit">Find us</a>
+    </nav>
+    <button class="bag" id="bagButton" type="button" aria-label="Open basket">Bag <span id="bagCount">0</span></button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero-copy">
+        <p class="eyebrow">Rajpur, Dehradun</p>
+        <h1><span>THE</span> HAKKA <span>FOOD</span> <em>HOUSE</em></h1>
+        <p class="intro">North Indian comfort food, street-food favourites and plates made for sharing.</p>
+        <a class="round-link" href="#menu">See the menu <span aria-hidden="true">↓</span></a>
+      </div>
+      <img class="coffee-cutout" src="images/hakka-paneer-thali-small.png"
+        alt="A HAKKA-style paneer thali with curry, dal, rice and rotis" />
+      <div class="hero-stamp" aria-label="Open daily">
+        <span>HOT • FRESH • HAPPY • </span><b>✳</b>
+      </div>
+      <div class="hero-doodle doodle-left" aria-hidden="true">✳</div>
+      <div class="hero-doodle doodle-right" aria-hidden="true">☻</div>
+      <p class="poster-note note-left">COMFORT FOOD,<br />NO COMPROMISE.</p>
+      <p class="poster-note note-right">DEHRADUN<br />DELIVERY.</p>
+    </section>
+
+    <section class="marquee" aria-label="Morrow promises">
+      <div><span>COMFORT FOOD, BIG FLAVOUR</span><i>✳</i><span>RAJPUR, DEHRADUN</span><i>✳</i><span>BREAKFAST TO
+          DINNER</span><i>✳</i><span>COMFORT FOOD, BIG FLAVOUR</span><i>✳</i></div>
+    </section>
+
+    <section class="story" id="ritual">
+      <p class="eyebrow">Hakka, your way</p>
+      <div class="story-grid">
+        <h2>BIG<br />FLAVOUR.<br /><em>FULL PLATES.</em></h2>
+        <div class="story-copy">
+          <p>HAKKA brings together North Indian comfort food and street-food favourites for breakfast, lunch and dinner.
+          </p>
+          <p>Come hungry, share a plate, and make your regular order a good one.</p>
+          <a class="text-link" href="#visit">Find your table <span>↗</span></a>
+        </div>
+      </div>
+      <div class="ingredient-row" aria-label="Coffee ingredients">
+        <article><span class="number">01</span>
+          <h3>THE THALI</h3>
+          <p>Dal, sabzi, rice, salad, raita and warm rotis—everything in one happy plate.</p>
+        </article>
+        <article><span class="number">02</span>
+          <h3>THE STREET BITE</h3>
+          <p>Everyday favourites, quick comfort and lots of masala.</p>
+        </article>
+        <article><span class="number">03</span>
+          <h3>THE GATHERING</h3>
+          <p>Bring your people. There’s always room for one more bite.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="menu-heading">
+        <p class="eyebrow">Made for hungry people</p>
+        <h2>THE<br /><em>GOOD</em> STUFF.</h2>
+      </div>
+      <div class="menu-grid">
+        <article class="menu-card featured">
+          <div class="card-art art-latte"><img class="menu-cutout thali-card" src="images/hakka-paneer-thali-small.png"
+              alt="Paneer thali" /></div>
+          <div class="menu-card-content">
+            <div>
+              <p class="item-type">Signature thali</p>
+              <h3>Hakka Paneer Thali</h3>
+              <p>Dal, paneer, rice, salad, raita and three rotis.</p>
+            </div><button class="add" data-item="Hakka Paneer Thali" type="button">Add <span>+</span></button>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="card-art art-orange"><img class="menu-cutout chole-card" src="images/hakka-chole-kulcha-small.png"
+              alt="Chole kulcha" /></div>
+          <div class="menu-card-content">
+            <div>
+              <p class="item-type">Street favourite</p>
+              <h3>Chole Kulcha</h3>
+              <p>Soft kulcha paired with a hearty serving of chole.</p>
+            </div><button class="add" data-item="Chole Kulcha" type="button">Add <span>+</span></button>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="card-art art-pastry"><img class="menu-cutout chowmein-card" src="images/hakka-chowmein-small.png"
+              alt="Hakka chowmein with friendly cartoon eyes" /></div>
+          <div class="menu-card-content">
+            <div>
+              <p class="item-type">Wok favourite</p>
+              <h3>Hakka Chowmein</h3>
+              <p>Wok-tossed noodles, vegetables and a little extra swagger.</p>
+            </div><button class="add" data-item="Hakka Chowmein" type="button">Add <span>+</span></button>
+          </div>
+        </article>
+      </div>
+      <a class="button" href="#visit">Plan your order <span>→</span></a>
+    </section>
+
+    <section class="pour-section">
+      <div class="pour-visual">
+        <div class="coffee-ring ring-one"></div>
+        <div class="coffee-ring ring-two"></div><img class="chole-cutout" src="images/hakka-chole-kulcha-small.png"
+          alt="Chole kulcha plate" />
+        <div class="pour-word">EAT<br />HAPPY</div><span>GOOD THINGS TAKE A MINUTE</span>
+      </div>
+      <div class="pour-copy">
+        <p class="eyebrow">Come with an appetite</p>
+        <h2>TAKE YOUR<br />TIME <em>WITH IT.</em></h2>
+        <p>Slow lunch, quick bite, long catch-up—the best plate is the one you want to talk over.</p><a
+          class="round-link inverse" href="#visit">Come say hi <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="visit" id="visit">
+      <p class="eyebrow">Your new regular</p>
+      <div class="visit-grid">
+        <h2>FIND<br />YOUR<br /><em>HAKKA</em></h2>
+        <div class="visit-card">
+          <div class="pin">✦</div>
+          <h3>HAKKA RESTAURANT</h3>
+          <p>Makka Wala, near IMS College, Rajpur, Dehradun.</p>
+          <div class="hours"><span>Every day</span><b>7:15am—11:45pm</b><span>Call</span><b>+91 82180 92362</b></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#top">HAKKA<span>®</span></a>
+    <p>COMFORT FOOD, BIG FLAVOUR, DEHRADUN.</p>
+    <p>© <span id="year"></span> HAKKA RESTAURANT</p>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+  <script type="module" src="motion.js"></script>
+</body>
+
+</html>
